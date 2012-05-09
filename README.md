@@ -31,9 +31,9 @@ see http://www.pmwiki.org/ for upstream package
     
 ## Updating upstream package
 
-* clone this repository and run `uscan` from the root of it 
+* clone this repository and run `uscan` from the root of the latest version 
 * extract the downloaded upstream package
-* move the debian directory into it
+* copy the debian directory from the latest version into it
 * run `dch -v newversion-1`
 * add entry: "New upstream release."
 * apply patches by running: `while dquilt push; do dquilt refresh; done`
