@@ -6,14 +6,17 @@ see http://www.pmwiki.org/ for upstream package
 
 * install packaging tool suite:
 
+	```
     aptitude install build-essential debhelper devscripts quilt
-    
+    ```
 * create debian quilt alias in ~/.bashrc
 
+	```
     alias dquilt="quilt --quiltrc=${HOME}/.quiltrc-dpkg"
-    
+   	```
 * create ~/.quiltrc-dpkg
 
+	```
     d=. ; while [ ! -d $d/debian -a `readlink -e $d` != / ]; do d=$d/..; done
     if [ -d $d/debian ] && [ -z $QUILT_PATCHES ]; then
         # if in Debian packaging tree with unset $QUILT_PATCHES
@@ -24,6 +27,7 @@ see http://www.pmwiki.org/ for upstream package
         QUILT_COLORS="diff_hdr=1;32:diff_add=1;34:diff_rem=1;31:diff_hunk=1;33:diff_ctx=35:diff_cctx=33"
         if ! [ -d $d/debian/patches ]; then mkdir $d/debian/patches; fi
     fi
+	```
     
 ## Updating upstream package
 
