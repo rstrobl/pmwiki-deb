@@ -3,7 +3,7 @@ Section: web
 Priority: extra
 Maintainer: Robert Strobl <robert.strobl@student.hpi.uni-potsdam.de>
 Build-Depends: debhelper (>= 8.0.0)
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Homepage: http://www.pmwiki.org
 
 Package: pmwiki
@@ -14,7 +14,7 @@ Description: customizable and lightweight PHP-based wiki system using file-based
  PmWiki is a wiki-based system for collaborative creation and maintenance of
  websites. Pages can be edited either by the public or by small groups of 
  authors.
- . 
- PmWiki is written in PHP and allows to store the pages into files so that 
+ .
+ PmWiki is written in PHP and allows one to store the pages into files so that
  no database is required, though MySQL can be used optionally.
  
