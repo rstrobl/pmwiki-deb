@@ -1,5 +1,0 @@
-added index file
---- /dev/null
-+++ b/index.php
-@@ -0,0 +1 @@
-+<?php include('pmwiki.php');
