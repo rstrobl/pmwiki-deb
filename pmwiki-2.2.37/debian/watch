@@ -1,2 +1,2 @@
 version=3
-http://www.pmwiki.org/wiki/PmWiki/Download http:\/\/www\.pmwiki\.org\/pub\/pmwiki\/pmwiki-(.+\..+\..+)\.tgz
+http://www.pmwiki.org/pub/pmwiki/pmwiki-(.+)\.(.+)\.(.+)\.tgz
